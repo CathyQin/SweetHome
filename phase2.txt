@@ -1,0 +1,54 @@
+
+# team24 phase2.txt
+
+URL to open our website: https://sweethome-csc309.herokuapp.com/
+
+=========ADMIN==========
+- The admin should sign in with userId admin and password 12345678
+- Click the SIGN IN button and enter the userId and password, you can navigate to the admin page.
+- Admin can see all post/user info by clicking DISPLAY All POSTS/USERS INFO button.
+- Admin can search for a specific post/user by enter the PostName or UserId. Switch the select button on the left before enter Search button.
+- Admin can block any user to post and send email and view or delete any post.
+- The posts of blocked users will not be displayed on the search page. 
+- If you signed in as an admin, only click LOG OUT will return to the home page.
+
+=========USER==========
+- You can click REGISTER button to sign up or SIGN IN with registered users id and pw in our database.
+
+========NAVIGATION BAR (for user signed in)============
+- SWEETHOME: to home page.
+- NEW POST: to new post page.
+    ————————new post page———————
+	- User can make a new post here.
+
+- SEARCH: to search page.
+- ICON: two options
+	— NameId button: to personal page
+
+		—————personal page—————
+		- Information: to personal-info page.
+			    	   You can view or edit your personal information here.
+			    	   Please validate your email.
+			    	   Please add your self-description here if you want to make new posts.
+		- Posting: to personal-posts page.
+			   	   You can view or remove your previous post.
+		- Contact List: to personal-contacts page.
+				        You can view all your contacts or remove any of them.
+
+	- LOG OUT: to home page.
+
+
+========HOME PAGE==========
+- If you are a user, enter a valid street address to start seaching. 
+- You can also adjust the searching radius.
+- You can search without signing in.
+
+	————————search page———————
+	- You can apply filter for your search.
+	- Clicking the post below will take you to the post page.
+	- Users that are not signed-in cannot view the post.
+
+		———————Post Page———————
+		- The contact me section is aimed to send emails to the post owner by our website. You can type anything in the input box and enter sent!
+		- You can only send eamil to a user that has a validated email.
+

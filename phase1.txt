@@ -1,0 +1,54 @@
+# team24 phase1.txt
+
+========HOME PAGE==========
+- The home page is located in ./view/index/index.html.
+- Clicking the SWEETHOME logo in any page will navigate to the home page. (You will need to sign in again since we didn’t implement to save the log in user info in phase1)
+- If you already signed in as a user, by clicking the icon and the LOG OUT button (top-right of the page), you can also return to the home page.
+- If you already signed in as an admin, click LOG OUT or the SWEETHOME logo will return to the home page.
+- Clicking the search button will take you to the search page.
+
+=========USER==========
+- The users allowed to sign in has userId instructor, wangsit4, linshiq4, linjiaya, qinyang2 and all passwords are set to 123456.
+- You can click REGISTER button to sign up, but we didn’t implement to store the input data from user in phase1.
+- The search bar doesn’t work in pahse1.
+- You can apply filter for your search.
+- Clicking the post below will take you to the post page.
+
+	———————Post Page———————
+	- The contact me section is aimed to send emails to the post owner by our website. You can type anything in the input box and enter sent!
+	  But we won’t sent anything in phase1.
+
+
+
+========NAVIGATION BAR (for user signed in)============
+- SWEETHOME: to home page
+- NEW POST: to new post page.
+
+        ————————new post page———————
+	- User can make a new post here.
+	- But all the info will not be stored in phase1.
+- SEARCH: to search page.
+- ICON: two options 
+	— Name button: to personal page
+
+		—————personal page—————
+		- Information: to personal-info page.
+			       You can view or edit your personal information here.
+		- Posting: to personal-posts page.
+			   You can view or remove your previous post.
+		- Contact List: to personal-contacts page.
+				You can view all your contacts or remove any of them.
+
+	- LOG OUT: to home page.
+
+
+=========ADMIN==========
+- The admin should sign in with userId admin and password 123456.
+- Click the SIGN IN button and enter the userId and password, you can navigate to the admin page.
+- Admin can see all post/user info by clicking DISPLAY All POSTS/USERS INFO button.
+- Admin can search for a specific post/user by enter the PostId or UserId. Switch the select button on the left before enter Search button.
+- Admin can block any user to post and delete any post. (But this won’t take effect on any other pages sincere don’t have our server in phase1)
+
+==========NOTE==========
+All the fake data are located in class_def.js.
+The validation in the personal info page for email address should send a validation email to the given email address, which is not implemented in phase 1.

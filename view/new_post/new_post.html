@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>New Post Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="new_post.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../top_bar/top_bar.css" />
+  <link rel="stylesheet" type="text/css" href="../footer/footer.css" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="shortcut icon" href="../../Images/topBarLogo.png" type="image/png" style="">
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <!-- Modal --><!-- navBar -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font  -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="topbar"></div>
+    <div class="newpost-content">
+      <br>
+      <div class="title">
+        <h1 class="main-heading">New Post</h1>
+        <h3 class="blurb">Leave your information about your post below &mdash;</h3>
+        <span class="blurb-tagline">be real and specific.</span>
+      </div>
+
+      <form class="newpost-form" method="post" action="#" novalidate="novalidate">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+        <label for="newpost-title">Title<span id="error_message_title" class="error"></span></label>
+        <input id="newpost-title" type="text" name="title" autocomplete="off" placeholder="Your new post title" />
+
+        <label for="newpost-area">Address <small>-- address of your (preferred) house or your preferred area</small><br><span id="error_message_address" class="error"></span></label>
+        <input id="pac-input" type="text" class="textbox" name="area" autocomplete="off" placeholder="(Suite-number,) Street-number, City, State, Country, Postal-code" />
+
+        <label for="newpost-filter">Filter</label>
+        <!--Filter!!!!!-->
+          <div class = "filter">
+            <ul class = "select">
+              <li class = "select-list">
+                <dl id="genderSelect">
+                  <dt>GENDER:</dt>
+                  <dd class="select-all_gender selected"><a href="#">DON'T CARE</a></dd>
+                  <dd class="gender" data-id="male"><a href="#">Male</a></dd>
+                  <dd class="gender" data-id="female"><a href="#">Female</a></dd>
+                  <dd class="gender" data-id="otherGender"><a href="#">Other</a></dd>
+                </dl>
+              </li>
+              <li class = "select-list">
+                <dl id="petSelect">
+                  <dt>PET:</dt>
+                  <dd class="select-all_pet selected"><a href="#">DON'T CARE</a></dd>
+                  <dd class="pet" data-id="cat"><a href="#">Cat</a></dd>
+                  <dd class="pet" data-id="dog"><a href="#">Dog</a></dd>
+                  <dd class="pet" data-id="otherPet"><a href="#">Other</a></dd>
+                  <dd class="pet" data-id="none"><a href="#">None</a></dd>
+                </dl>
+              </li>
+              <li class = "select-list">
+                <dl id="priceSelect">
+                  <dt>PREFER PRICE:</dt>
+                  <dd class="select-all_price selected"><a href="#">DON'T CARE</a></dd>
+                  <dd class="price" data-id="below1000"><a href="#">Below $1000</a></dd>
+                  <dd class="price" data-id="1000-1500"><a href="#">$1000 - $1499</a></dd>
+                  <dd class="price" data-id="1500-2000"><a href="#">$1500 - $2000</a></dd>
+                  <dd class="price" data-id="above2000"><a href="#">Above $2000</a></dd>
+
+                </dl>
+              </li>
+              <li class = "select-list">
+                <dl id="roomSelect">
+                  <dt>PREFER ROOM:</dt>
+                  <dd class="select-all_room selected"><a href="#">DON'T CARE</a></dd>
+                  <dd class="room" data-id="condo"><a href="#">Condo</a></dd>
+                  <dd class="room" data-id="house"><a href="#">House</a></dd>
+                  <dd class="room" data-id="townhouse"><a href="#">Townhouse</a></dd>
+                </dl>
+              </li>
+              <li class="select-result">
+                <dl>
+                  <dt>SELECTED: </dt>
+                  <dd class="select-no">NOTHING</dd>
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+        <!--filter end-->
+      </div>
+
+      <div class="col-lg-6 mb-4">
+
+
+        <label for="newpost-housediscrib">Description<span id="error_message_description" class="error"></span></label>
+        <textarea class="newpost-housediscrib" type="textarea" id="newpost-housediscrib" name="housediscrib" maxlength="10000" rows="10" placeholder="Describe what kind of roommates you want to find. Describe what kind of room or house you want to live. You can include the information about your owned house or your preferred house if you have one."></textarea>
+        <div class="btn" id="wrap">
+            Upload Image
+            <input class="file-upload-input" id="file-upload-input" type="file" multiple="multiple" accept="image/*"/>
+        </div>
+
+        <label for="file-upload-input" style="font-size: 12px; margin-bottom: 20px; color: #E1951A">If you want to upload multiple images, do it all at once. Max images: 6</label>
+        <div class="image-holder"></div>
+
+        <br><br>
+        <div class="btn" id="post-btn"><a class="post" id="posting" onclick="post()" style="text-decoration: none"><span>POST</span></a></div>
+      </div>
+      </div>
+
+    </form>
+    </div>
+    <div class='footer'></div>
+    <script type="text/javascript" src="../footer/footer.js"></script>
+    <script type="text/javascript" src="new_post.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZLX4s1reL-DuI0vlMOxOLnMbp5f_HZLA&callback=initAutocomplete&libraries=places"
+  type="text/javascript"></script>
+
+</body>
+</html>

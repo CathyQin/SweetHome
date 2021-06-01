@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title>SweetHome | Personal Info</title>
+    <link rel="shortcut icon" href="../../Images/topBarLogo.png" type="image/png" style="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../top_bar/top_bar.css">
+    <link rel="stylesheet" type="text/css" href="personal_info.css">
+    <link rel="stylesheet" type="text/css" href="../footer/footer.css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container" id="bodyContainer">
+        <!-- Top nav bar-->
+        <div class="topbar"></div>
+
+        <div class="main" style="font-family: 'Futura PT', 'Futura', sans-serif; margin-top: 40px">
+            <!-- Left Sidebar -->
+            <div class="col-md-2" id="sideBar">
+                <h3>Personal Profile</h3>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a class="nav-link active" style="background-color: #5FA9D5;" href="#">Informaltion</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #1C8ABE;" href="../personal_posts/personal_posts.html">Posting</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #1C8ABE;" href="../personal_contacts/personal_contacts.html">Contact List</a></li>
+                </ul>
+            </div>
+
+            <div class="offset-md-2 col-md-10" style="left: 20px;">
+                <h3 id="personalInfoTitle">Personal Information: id</h3>
+            </div>
+
+            <!-- Content -->
+            <div class="offset-md-2 col-md-6" id="content" style="left: 25px;">
+
+                <!-- Name Form -->
+                <form class="form-horizontal" id="nameForm">
+                    <h4>Name</h4>
+                    <div class="form-group row">
+                        <label for="firstName" class="control-label col-md-3">First Name:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" disabled id="firstNameInput" value="first name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastName" class="control-label col-md-3">Last Name:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" disabled id="lastNameInput" value="last name">
+                        </div>
+                    </div>
+                    <div class="offset-md-3 col-md-9">
+                        <button type="submit" class="btn btn-light edit">Edit</button>
+                        <button type="submit" class="btn btn-light save" disabled>Save</button>
+                        <button type="submit" class="btn btn-light cancel" disabled>Cancel</button>
+                    </div>
+                </form>
+
+                <!-- Password Form -->
+                <form class="form-horizontal" id="pwdForm">
+                    <h4>Password</h4>
+                    <div class="form-group row">
+                        <label for="pwd" class="control-label col-md-3">Change Password:</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control" id="pwdInput">
+                        </div>
+                            
+                    </div>
+                    <div class="offset-md-3 col-md-10">
+                        <button type="button" class="btn btn-light" id="showPwd">Show password</button>
+                        <button type="submit" class="btn btn-light save">Update password</button>
+                    </div>
+                </form>
+
+                <!-- Email Form -->
+                <form class="form-horizontal" id="emailForm">
+                    <h4>Email</h4>
+                    <div class="form-group row">
+                        <label for="email" class="control-label col-md-3">Email Address:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" disabled id="emailInput" value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="offset-md-3 col-md-9">
+                        <button type="submit" class="btn btn-light edit">Edit</button>
+                        <button type="submit" class="btn btn-light save" disabled>Save</button>
+                        <button type="submit" class="btn btn-light cancel" disabled>Cancel</button>
+                    </div>
+                </form>
+
+                <!-- Gender Form -->
+                <form class="form-horizontal" id="genderForm">
+                    <h4>Gender</h4>
+                    <div class="form-group row">
+                        <label for="gender" class="control-label col-md-3">Gender:</label>
+                        <div class="col-md-9">
+                            <select class="form-control" disabled id="genderInput">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="offset-md-3 col-md-9">
+                        <button type="submit" class="btn btn-light edit">Edit</button>
+                        <button type="submit" class="btn btn-light save" disabled>Save</button>
+                        <button type="submit" class="btn btn-light cancel" disabled>Cancel</button>
+                    </div>
+                </form>
+
+                <!-- Self Description Form-->
+                <form class="form" id="descForm">
+                    <h4>Self Description</h4>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="descInput" disabled></textarea>
+                    </div>
+                    <div class="offset-md-3 col-md-9">
+                        <button type="submit" class="btn btn-light edit">Edit</button>
+                        <button type="submit" class="btn btn-light save" disabled>Save</button>
+                        <button type="submit" class="btn btn-light cancel" disabled>Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Photo -->
+            <!-- <div class="col-md-4 justify-content-md-center"> -->
+                <!-- <div class="col-md-6"> -->
+                <div class="photoClass">
+                    <img src="../../Images/default_photo.jpeg" class="rounded-circle" id="photo">
+                    <div class="btn btn-light" id="updatePhoto">
+                        Upload Photo
+                        <input type="file" name="file"/>
+                    </div>
+                  </div>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+
+    </div>
+
+    <div class="footer"></div>
+    <script type="text/javascript" src="../top_bar/top_bar.js"></script>
+    <script type="text/javascript" src="personal_info.js"></script>
+    <script type="text/javascript" src="../footer/footer.js"></script>
+
+</body>

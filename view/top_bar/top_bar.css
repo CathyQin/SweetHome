@@ -1,0 +1,164 @@
+body {
+  margin:0;
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+#newPost {
+  color: #5FA9D5;
+  cursor: pointer;
+}
+.topbar {
+  overflow: hidden;
+  background-color: #e3f2fd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:45px;
+  z-index: 999;
+  border-bottom: 2px solid #88cdff;
+}
+
+.topbar .menu {
+  font-family: "Futura PT", "Futura", sans-serif;
+  float: left;
+  display: block;
+  color: #5FA9D5;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 7px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topbar .menu:hover {
+  background: white;
+  color: #5FA9D5;
+  height:50px;
+  text-decoration: none;
+  height:43px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.top-right {
+  position: fixed;
+  display: block;
+  right: 16px;
+}
+
+.loginTopBar #personalPhoto {
+  width: 40px;
+  height: 40px;
+  margin-top: 1px;
+  border-radius: 50%;
+  border: 2px solid #85C1E9;
+  margin-left: 10px;
+}
+
+.loginTopBar #personalPhoto {
+  cursor: pointer;
+}
+
+.dropdown-item {
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.dropdown-item a {
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #5FA9D5 !important;
+    color: white !important;
+}
+
+#logoImageTop {
+  height: 35px;
+  margin-top: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------------*/
+.topbar p {
+  display: inline-block;
+  margin-top: 5px;
+}
+/* --------------------- awesome button --------------------- */
+.button, .button:link, .button:visited {
+  margin-left: 10px;
+  padding: 6px 3px 6px 3px;
+  margin-bottom: -2px;
+  border: 2px solid #5FA9D5;
+  color: #5FA9D5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background: #5FA9D5;
+  border: 2px solid #5FA9D5;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal-button, .modal-button:link, .modal-button:visited {
+  top: -10px;
+  margin: 0px;
+  padding: 8px 3px 8px 3px;
+  border: 1px solid #5FA9D5;
+  color: #5FA9D5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  transition: all .2s ease-in-out;
+}
+
+.modal-button:hover {
+  background: #5FA9D5;
+  border: 1px solid #5FA9D5;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* -------------------------- awesome button done -------------------------- */
+
+#signInModalTitle {
+  text-align: center;
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.modal-body, #registerModalTitle, #signInModalTitle {
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.block{
+  display: block;
+  margin:5px 0;
+}
+
+.block label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+/*  --------------------------------- error -------------------------------*/
+.error-message {
+  display: inline-block;
+  background-color: #fce4e4;
+  /* border: 1px solid #cc0033; */
+  outline: none;
+  color: #cc0033;
+  font-size: 13px;
+  margin-left: 155px;
+  min-height: 15px;
+}

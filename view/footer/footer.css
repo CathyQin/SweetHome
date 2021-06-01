@@ -1,0 +1,30 @@
+#myfooter {
+	background-color: #e3f2fd;;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	color: white;
+	text-align: center;
+
+}
+
+#mytext {
+	color: #5FA9D5;
+	font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.mycontainer {
+	padding-top: 10px;
+}
+
+.mylink {
+	color: #1C8ABE;;
+	font-family: "Futura PT", "Futura", sans-serif;
+	margin-bottom: 2%;
+}
+
+.mylink2 {
+	padding: 20px;
+	font-size: 16px;
+}

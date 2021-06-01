@@ -1,0 +1,254 @@
+
+/* ----------------------- search bar line ----------------------- */
+.topCenter {
+  margin-top: 15px;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+}
+.searchBar {
+  outline: 0;
+  float: left;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  z-index: 99;
+  width: 100%;
+}
+
+.textbox {
+  font-family: "Futura PT", "Futura", sans-serif;
+  outline: 0;
+  height: 42px;
+  width: 92%;
+  line-height: 42px;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #212121;
+  border: 0;
+  float: left;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.textbox:focus {
+  outline: 0;
+  background-color: #FFF;
+}
+
+.searchButton {
+  outline: none;
+  background: none;
+  background-color: #5FA9D5;
+  float: left;
+  height: 42px;
+  /* width: 42px; */
+  width: 8%;
+  text-align: center;
+  line-height: 42px;
+  border: 0;
+  color: #FFF;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  text-rendering: auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.searchButton:hover {
+  background-color: #85C1E9;
+}
+/* ----------------------- search bar line done----------------------- */
+
+
+/* --------------------- filter --------------------------------- */
+.container {
+  padding-top: 2%;
+}
+.select{
+  padding:5px 10px;
+  border:#ddd 1px solid;
+  border-radius:10px;
+  width:100%;
+  margin-top: 70px;
+  font-family: "Futura PT", "Futura", sans-serif;
+  z-index: 99;
+}
+
+.select li{
+  list-style:none;
+  padding:2px 0 0px 90px;
+  font-size: 12.5px;
+}
+
+.select .select-list, .select-result{
+  border-bottom:#eee 1px dashed;
+}
+
+.select dl{
+  zoom:1;
+  position:relative;
+  line-height:24px;
+}
+
+.select dl:after{
+  content:" ";
+  display:block;
+  clear:both;
+  height:0;
+  overflow:hidden;
+  margin-bottom: -10px;
+}
+
+.select dt{
+  width:120px;
+  margin-bottom:5px;
+  position:absolute;
+  top:0;
+  left:-100px;
+  text-align:right;
+  color:#666;
+  height:24px;
+  line-height:24px
+}
+
+.select dd{
+  float:left;
+  display:inline;
+  margin:3px 0 0px 25px;
+}
+
+.select a{
+  display:inline-block;
+  white-space:nowrap;
+  height:24px;
+  margin-left:10px;
+  padding:0 10px;
+  text-decoration:none;
+  color:#5FA9D5;
+  border-radius:2px;
+}
+
+.select a:hover {
+  color:#3C8FC1;
+  background-color:#A5D9F8;
+  text-decoration:none;
+}
+
+.select .selected a {
+  color:white;
+  background-color:#5FA9D5;
+}
+
+.select-result dt {
+  font-weight:bold;
+}
+
+.select-no {
+  color:#999;
+}
+
+#bottom-center {
+  margin-left: 400px;
+}
+
+/* .select .select-result a{
+  padding-right:20px;
+} */
+
+.select .select-result a:hover{
+  background-position:right -15px
+}
+
+/* Search Button */
+.button, .button:link, .button:visited {
+  margin-left: 10px;
+  padding: 1px 1px 1px 1px;
+  margin-bottom: -2px;
+  border: 2px solid #5FA9D5;
+  color: #5FA9D5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background: #5FA9D5;
+  border: 2px solid #5FA9D5;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* --------------------- filter done --------------------------------- */
+
+/* ---------------------- card Info ----------------------------------- */
+
+.card_photo {
+  width:70px;
+  margin: 10px 10px 0px 10px;
+  border-radius: 50%;
+  border: 1px solid #5FA9D5;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #A6C6DA;
+  transition: 0.5s;
+  width: 30px;
+  height: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.card:hover {
+  /* rgba(0,0,0,0.2) */
+  box-shadow: 0 20px 30px 0 #A6C6DA;
+  cursor: pointer;
+}
+
+
+.details {
+  padding: 2px 16px;
+}
+
+#card_details_info {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#searchPage{
+  background-color: white;
+}
+
+.details {
+  overflow: scroll;
+}
+
+/* ----------------------- radio ----------------------- */
+.radio-choice {
+  width: 100%;
+  /* position: relative; */
+  margin-left: 3%;
+  font-family: "Futura PT", "Futura", sans-serif;
+  color: #666;
+  top: 6px;
+  bottom: 5px;
+}
+
+.form-check-inline {
+    margin-left: 2%;
+}
+
+.radio-choice label{
+  font-family: "Futura PT", "Futura", sans-serif;
+  color: #5FA9D5;
+
+}

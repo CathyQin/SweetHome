@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SweetHome</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="search_page.css" />
+    <link rel="stylesheet" type="text/css" href="../top_bar/top_bar.css" />
+    <link rel="shortcut icon" href="../../Images/topBarLogo.png" type="image/png" style="">
+    <link rel="stylesheet" type="text/css" href="../footer/footer.css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Modal --><!-- navBar -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="topbar"></div>
+
+    <!-- Modal - Sign in -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+    <!-- Modal - Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+    <div class="main">
+      <div class="topCenter">
+        <div class="searchBar">
+          <input id="pac-input" type="text" class="textbox" placeholder="Search...">
+          <input title="Search" value="" type="submit" onclick="searchFilter()" class="searchButton fas fa-search">
+        </div>
+
+        <div class="radio-choice">
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optradio" value="3">WITHIN 3KM
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" value="5" name="optradio">WITHIN 5KM
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" value="7" name="optradio">WITHIN 7KM
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" value="9" name="optradio">WITHIN 9KM
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class = "filter">
+          <ul class = "select">
+            <!-- <li class = "select-list">
+              <dl id="distanceSelect">
+                <dt>DISTANCE:</dt>
+                <dd class="distance selected" data-id="3"><a href="#">WITHIN 3KM</a></dd>
+                <dd class="distance" data-id="5"><a href="#">WITHIN 5KM</a></dd>
+                <dd class="distance" data-id="7"><a href="#">WITHIN 7KM</a></dd>
+                <dd class="distance" data-id="9"><a href="#">WITHIN 9KM</a></dd>
+              </dl>
+            </li> -->
+            <li class = "select-list">
+              <dl id="genderSelect">
+                <dt>GENDER:</dt>
+                <dd class="select-all_gender selected"><a href="#">DON'T CARE</a></dd>
+                <dd class="gender" data-id="male"><a href="#">Male</a></dd>
+                <dd class="gender" data-id="female"><a href="#">Female</a></dd>
+                <dd class="gender" data-id="otherGender"><a href="#">Other</a></dd>
+              </dl>
+            </li>
+            <li class = "select-list">
+              <dl id="petSelect">
+                <dt>PET:</dt>
+                <dd class="select-all_pet selected"><a href="#">DON'T CARE</a></dd>
+                <dd class="pet" data-id="cat"><a href="#">Cat</a></dd>
+                <dd class="pet" data-id="dog"><a href="#">Dog</a></dd>
+                <dd class="pet" data-id="otherPet"><a href="#">Other</a></dd>
+                <dd class="pet" data-id="none"><a href="#">None</a></dd>
+              </dl>
+            </li>
+            <li class = "select-list">
+              <dl id="priceSelect">
+                <dt>PREFER PRICE:</dt>
+                <dd class="select-all_price selected"><a href="#">DON'T CARE</a></dd>
+                <dd class="price" data-id="below1000"><a href="#">Below $1000</a></dd>
+                <dd class="price" data-id="1000-1500"><a href="#">$1000 - $1499</a></dd>
+                <dd class="price" data-id="1500-2000"><a href="#">$1500 - $2000</a></dd>
+                <dd class="price" data-id="above2000"><a href="#">Above $2000</a></dd>
+
+              </dl>
+            </li>
+            <li class = "select-list">
+              <dl id="roomSelect">
+                <dt>PREFER ROOM:</dt>
+                <dd class="select-all_room selected"><a href="#">DON'T CARE</a></dd>
+                <dd class="room" data-id="condo"><a href="#">Condo</a></dd>
+                <dd class="room" data-id="house"><a href="#">House</a></dd>
+                <dd class="room" data-id="townhouse"><a href="#">Townhouse</a></dd>
+              </dl>
+            </li>
+            <li class="select-result">
+              <dl>
+                <dt>SELECTED: </dt>
+                <dd class="select-no">NOTHING</dd>
+              </dl>
+            </li>
+            <li class="select-search">
+              <dl>
+                <dd id="bottom-center" onclick="searchFilter()"><p class="button"><strong>Search</strong></p></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="card_details_info" class="info">
+      </div>
+
+    </div>
+    <div class='footer'></div>
+    <script type="text/javascript" src="../footer/footer.js"></script>
+
+    <!-- Google Map API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZLX4s1reL-DuI0vlMOxOLnMbp5f_HZLA&callback=initAutocomplete&libraries=places"
+  type="text/javascript"></script>
+    <script type="text/javascript" src="search_page.js"></script>
+    <script type="text/javascript" src="../top_bar/top_bar.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+body {
+	padding-top: 54px;
+}
+
+#post {
+	color: #4D8299;
+	font-family: "Futura PT", "Futura", sans-serif;
+}
+
+#title {
+	color: #123646;
+}
+
+#address {
+	color: #1C8ABE;
+}
+
+.user-info #headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+	border: 2px solid #85C1E9;
+}
+
+.user-info h3 {
+	text-align: center;
+	color: #1C8ABE;
+}
+
+#Preferences .preference {
+	font-weight: 500;
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #1C8ABE;
+	border-radius: 2px;
+	text-align: center;
+	opacity: 0.8;
+	font-family: "Futura PT", "Futura", sans-serif; 
+}
+
+#Personal-info .card-header, #Preferences .card-header, #email-sender .card-header{
+	color: #1C8ABE;
+	border: 2px solid #e3f2fd;
+	background-color: #e3f2fd;
+	font-family: "Futura PT", "Futura", sans-serif; 
+}
+
+#Personal-info .card-body {
+	color: #4D8299;
+	font-family: "Futura PT", "Futura", sans-serif; 
+}
+
+#email-sender a {
+	font-weight: 600;
+	background-color: #1C8ABE;
+	float: right;
+	border: 1px solid #1C8ABE;
+	font-family: "Futura PT", "Futura", sans-serif; 
+
+}
+
+#email-sender a:hover {
+	background-color: #fff;
+	color: #1C8ABE;
+	border: 1px solid #fff;
+}
+
+#houseImageIndicators {
+	display: none;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}

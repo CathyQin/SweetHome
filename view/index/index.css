@@ -1,0 +1,239 @@
+/* top left awesome font */
+/* .navBar-logo {
+  font: 400 40px 'Lobster Two', Helvetica, sans-serif;
+  color: #5FA9D5;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+  margin-top: 20px;
+} */
+body {
+  background-image: url("../../Images/background5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+#myfooter {
+	background-color: #e3f2fd;
+  position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	color: white;
+	text-align: center;
+}
+/* .topbar {
+  background-color: rgba(227, 242, 253, 0.6) !important;
+} */
+.topbar p {
+  display: inline-block;
+  margin-top: 5px;
+}
+/* --------------------- awesome button --------------------- */
+.button, .button:link, .button:visited {
+  margin-left: 10px;
+  padding: 6px 3px 6px 3px;
+  margin-bottom: -2px;
+  border: 2px solid #5FA9D5;
+  color: #5FA9D5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background: #5FA9D5;
+  border: 2px solid #5FA9D5;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal-button, .modal-button:link, .modal-button:visited {
+  top: -10px;
+  margin: 0px;
+  padding: 8px 3px 8px 3px;
+  border: 1px solid #5FA9D5;
+  color: #5FA9D5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  transition: all .2s ease-in-out;
+}
+
+.modal-button:hover {
+  background: #5FA9D5;
+  border: 1px solid #5FA9D5;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* -------------------------- awesome button done -------------------------- */
+
+#signInModalTitle {
+  text-align: center;
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.modal-body, #registerModalTitle, #signInModalTitle {
+  font-family: "Futura PT", "Futura", sans-serif;
+}
+
+.block{
+  display: block;
+  margin:5px 0;
+}
+
+/* label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+} */
+
+/* ----------------------- logoImage --------------------- */
+.center {
+  /* put into center */
+  position: absolute;
+  z-index: 15;
+  /* top: 50%;
+  left: 50%; */
+  /* margin: -200px 0 0 -320px; */
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+
+.center #logoImage {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+/* ----------------------- logoImage done --------------------- */
+
+/* ----------------------- search bar line ----------------------- */
+.searchBar {
+  outline: 0;
+  float: left;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+  /* put into center */
+  /* position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -150px; */
+}
+
+.textbox {
+  font-family: "Futura PT", "Futura", sans-serif;
+  outline: 0;
+  height: 42px;
+  width: 92%;
+  line-height: 42px;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #212121;
+  border: 0;
+  float: left;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.textbox:focus {
+  outline: 0;
+  background-color: #FFF;
+}
+
+.searchButton {
+  outline: none;
+  background: none;
+  /* rgba(38, 50, 56, 0.8); */
+  background-color: #5FA9D5;
+  float: left;
+  height: 42px;
+  width: 8%;
+  text-align: center;
+  line-height: 42px;
+  border: 0;
+  color: #FFF;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  text-rendering: auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.searchButton:hover {
+  /* rgba(0, 150, 136, 0.8); */
+  background-color: #85C1E9;
+}
+/* ----------------------- search bar line done----------------------- */
+
+/* ----------------------- map ----------------------- */
+#mapImage {
+  position: fixed;
+  bottom: 0%;
+  /* height: 55%; */
+  margin-left: 20%;
+  width: 60%
+}
+
+/*------------------------- sign in error message -------------------------*/
+#errorPassword {
+  color: red;
+  size: 10px;
+}
+
+#errorUser {
+  color: red;
+  size: 10px;
+}
+/*------------------------- sign in error message done -------------------------*/
+
+#formCheck {
+  style=size:10px;
+  color:red;
+}
+
+/* ------------------------ error text ----------------------------------------- */
+#error_message {
+  text-align: center;
+  color: red;
+  font-size: 24px;
+  font-family: "Futura PT", "Futura", sans-serif;
+  min-height: 30px;
+}
+
+.error_box {
+  display: inline-block;
+  /* background-color: #fce4e4; */
+  /* border: 1px solid #cc0033; */
+  outline: none;
+  /* color: #cc0033; */
+  font-size: 20px;
+  margin-left: 30%;
+  min-height: 30px;
+}
+
+/* --------------------------- radio ----------------------- */
+.radio-choice {
+  width: 50%;
+  position: fixed;
+  margin-left: 4%;
+  font-family: "Futura PT", "Futura", sans-serif;
+  color: white;
+}
+
+.form-check-inline {
+    margin-left: 2%;
+}

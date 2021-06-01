@@ -1,0 +1,292 @@
+form, label, input {
+  display: block;
+}
+.newpost-content {
+  font-family: "Futura PT", "Futura", sans-serif;
+	color: #1C8ABE;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.newpost-content .main-heading {
+  color: #123646;
+  line-height: 100%;  /*行高*/
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.newpost-content .blurb {
+  margin-top: 35px;
+  line-height: 100%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.newpost-content .blurb-tagline {
+  display: block;
+  margin-top: 10px;
+  line-height: 100%;
+  font-size: 14px;
+}
+
+.newpost-content .newpost-form {
+  margin-top: 35px;
+}
+
+.newpost-content .newpost-form label {
+  line-height: 100%;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #123646;
+}
+
+.newpost-content .newpost-form input {
+  background-color: transparent;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 20px;
+  padding: 0 8px;
+  border: 1px solid #5FA9D5;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.newpost-content .newpost-form .file-upload-input {
+  margin-bottom: 0;
+  padding: 8px 8px;
+  height: 45px;
+}
+
+.newpost-content .newpost-form textarea {
+  background-color: transparent;
+  color: #123646;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0 8px;
+  border: 1px solid #5FA9D5;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.newpost-content .newpost-form input:hover,
+.newpost-content .newpost-form textarea:hover,
+.newpost-content .newpost-form input:focus,
+.newpost-content .newpost-form textarea:focus {
+  border: 2px solid #123646;
+}
+
+.newpost-content .newpost-form .newpost-house {
+  width: 5%;
+  margin-bottom: 10px;
+  margin-top: 26px;
+  float: left;
+}
+
+.newpost-content .newpost-form .image-holder {
+  width: 100%;
+  height: 150px;
+}
+
+.btn {
+  display: block;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #5FA9D5;
+  margin-left: 85%;
+  width: 80px;
+}
+
+.btn span {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: 2px solid #5FA9D5;
+  text-decoration: none;
+}
+
+.btn:hover span {
+  color: #666;
+  text-decoration: none;
+}
+
+
+/* --------------------- filter --------------------------------- */
+.select{
+  padding:5px 10px;
+  border:1px solid #5FA9D5;
+  border-radius:10px;
+  width:100%;
+  margin-top: 0;
+  font-family: "Futura PT", "Futura", sans-serif;
+  z-index: 99;
+}
+
+.select:hover{
+  border: 2px solid #123646;
+}
+
+.select li{
+  list-style:none;
+  padding:2px 0 0px 90px;
+  font-size: 12.5px;
+}
+
+.select .select-list, .select-result{
+  border-bottom:#eee 1px dashed;
+}
+
+.select dl{
+  zoom:1;
+  position:relative;
+  line-height:24px;
+}
+
+.select dl:after{
+  content:" ";
+  display:block;
+  clear:both;
+  height:0;
+  overflow:hidden;
+  margin-bottom: -10px;
+}
+
+.select dt{
+  width:120px;
+  margin-bottom:5px;
+  position:absolute;
+  top:0;
+  left:-100px;
+  text-align:right;
+  color:#666;
+  height:24px;
+  line-height:24px
+}
+
+.select dd{
+  float:left;
+  display:inline;
+  margin:3px 0 0px 25px;
+}
+
+.select a{
+  display:inline-block;
+  white-space:nowrap;
+  height:24px;
+  margin-left:10px;
+  padding:0 10px;
+  text-decoration:none;
+  color:#5FA9D5;
+  border-radius:2px;
+}
+
+.select a:hover {
+  color:#3C8FC1;
+  background-color:#A5D9F8;
+  text-decoration:none;
+}
+
+.select .selected a {
+  color:white;
+  background-color:#5FA9D5;
+}
+
+.select-result dt {
+  font-weight:bold;
+}
+
+.select-no {
+  color:#999;
+}
+
+#bottom-center {
+  margin-left: 350px;
+}
+
+/* Search Button */
+.button, .button:link, .button:visited {
+  margin-left: 10px;
+  padding: 1px 1px 1px 1px;
+  margin-bottom: -2px;
+  border: 2px solid #5FA9D5;
+  color: #5FA9D5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background: #5FA9D5;
+  border: 2px solid #5FA9D5;
+  color: #fefefe;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.newimg-holder {
+  width: 20%;
+  height: 50%;
+  padding: 5px;
+  float: left;
+  vertical-align: middle;
+}
+
+.img-display {
+  width: 80%;
+  height: 80%;
+  vertical-align: middle;
+}
+
+.img-name {
+  width: 80%;
+  height: 20%;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+#wrap {
+  overflow: hidden;
+  background-color: #5FA9D5;
+  color: #fff;
+  position: relative;
+  margin-left: 0;
+  width: 100%;
+}
+
+#wrap:hover {
+  background-color: #fff;
+  color: #5FA9D5;
+}
+
+
+#file-upload-input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+/* --------------------- filter done --------------------------------- */
+
+#newPost{
+  background-color: white;
+}
+
+.error {
+  color: red;
+}
